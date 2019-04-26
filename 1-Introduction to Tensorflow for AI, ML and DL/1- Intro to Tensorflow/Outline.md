@@ -81,7 +81,7 @@ The second main reason is when using neural networks, as they try to figure out 
 
 So far we've given an __introduction to the concepts and paradigms of Machine Learning and Deep Learning__. You saw that the traditional paradigm of expressing rules in a coding language may not always work to solve a problem. As such, scenarios such as Computer Vision are very difficult to solve with rules-based programming. Instead, if we feed a computer with enough data that we describe (or label) as what we want it to recognize, given that computers are really good at processing data and finding patterns that match, then we could potentially ‘train’ a system to solve a problem.
 
-#### II. Hands-on Exercise
+#### III. Hands-on Exercise
 
 some ways to code:
 
@@ -90,7 +90,7 @@ some ways to code:
 
 Now while this might seem very simple, you’ve actually gotten the basics for how neural networks work. As your applications get more complex, you’ll continue to use the same techniques. 
 
-#### III. Quiz
+#### IV. Quiz
 
 1. The diagram for traditional programming had Rules and Data In, but what came out?
 	
