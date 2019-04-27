@@ -78,7 +78,7 @@ So, its content has been greatly simplified, the goal being that __the convoluti
 
 A really useful method on the model is the `model.summary()` method. This allows you to inspect the layers of the model, and see the journey of the image through the convolutions, and here is the output. 
 
-![W3.1]()
+![W3.1](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI,%20ML%20and%20DL/images/W3.1.PNG?raw=true)
 
 It's a nice table showing us the layers, and some details about them including the output shape. It's important to keep an eye on the output shape column. When you first look at this, it can be a little bit confusing and feel like a bug. 
 
@@ -86,15 +86,15 @@ After all, isn't the data 28 by 28, so y is the output, 26 by 26. The key to thi
 
 Consider what happens when you start scanning through an image starting on the top left. So, for example with this image of the dog on the right, you can see zoomed into the pixels at its top left corner. 
 
-![W3.2]()
+![W3.2](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI,%20ML%20and%20DL/images/W3.2.PNG?raw=true)
 
 You can't calculate the filter for the pixel in the top left, because it doesn't have any neighbors above it or to its left. 
 
-![W3.3]()
+![W3.3](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI,%20ML%20and%20DL/images/W3.3.PNG?raw=true)
 
 In a similar fashion, the next pixel to the right won't work either because it doesn't have any neighbors above it. So, logically, the first pixel that you can do calculations on is this one, 
 
-![W3.5]()
+![W3.5](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI,%20ML%20and%20DL/images/W3.5.PNG?raw=true)
 
 because this one of course has all eight neighbors that a three by three filter needs. 
 
@@ -109,15 +109,15 @@ Next is the first of the max-pooling layers.
 
 Now, remember we specified it to be two-by-two, thus turning four pixels into one, and having our x and y. Now our output gets reduced from 26 by 26, to 13 by 13. 
 
-![W3.6]()
+![W3.6](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI,%20ML%20and%20DL/images/W3.6.PNG?raw=true)
 
 The convolutions will then operate on that, and of course, we lose the one pixel margin as before, so we're down to 11 by 11, 
 
-![W3.7]()
+![W3.7](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI,%20ML%20and%20DL/images/W3.7.PNG?raw=true)
 
 add another two-by-two max-pooling to have this rounding down, and went down, down to five-by-five images.
 
-![W3.8]()
+![W3.8](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI,%20ML%20and%20DL/images/W3.8.PNG?raw=true)
 
 So, now our dense neural network is the same as before, but it's being fed with five-by-five images instead of 28 by 28 ones. 
 
@@ -125,7 +125,7 @@ But remember, it's not just one compress five-by-five image instead of the origi
 
 Flatten that out and you have 25 pixels times 64, which is 1600. 
 
-![W3.9]()
+![W3.9](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI,%20ML%20and%20DL/images/W3.9.PNG?raw=true)
 
 So, you can see that the new flattened layer has 1,600 elements in it, as opposed to the 784(28*28) that you had previously. 
 
@@ -137,11 +137,11 @@ Training should be faster, but is there a sweet spot where it's more accurate? W
 
 You’ve now seen how to turn your Deep Neural Network into a Convolutional Neural Network by adding convolutional layers on top, and having the network train against the results of the convolutions instead of the raw pixels.
 
-#### Improving the Fashion classifier with convolutions
+#### IV. Improving the Fashion classifier with convolutions
 
 You've looked at convolutions and got a glimpse for how they worked. By __passing filters over an image to reduce the amount of information__, they then allowed the neural network to __effectively extract features that can distinguish one class of image from another__. You also saw how __pooling compresses the information to make it more manageable__.
 
-#### Hands-on Exercise
+#### V. Hands-on Exercise
 
 [Here’s](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Course%201%20-%20Part%206%20-%20Lesson%202%20-%20Notebook.ipynb) the notebook that Laurence was using in that screencast. To make it work quicker, go to the ‘Runtime’ menu, and select ‘Change runtime type’. Then select GPU as the hardware accelerator.
 
@@ -156,31 +156,31 @@ There are a few rules about the filter:
 
 Apart from using a filter matrix, it also has a multiplier factor and a bias. After applying the filter, the factor will be multiplied with the result, and the bias added to it. So if you have a filter with an element 0.25 in it, but the factor is set to 2, all elements of the filter are in theory multiplied by two so that element 0.25 is actually 0.5. The bias can be used if you want to make the resulting image brighter.
 
-#### Quiz
+#### VI. Quiz
 
 1. What is a Convolution?
 
-A technique to isolate features in images
+	A technique to isolate features in images
 
 2. What is a Pooling?
 
-A technique to reduce the information in an image while maintaining features
+	A technique to reduce the information in an image while maintaining features
 
 3. How do Convolutions improve image recognition?
 
-They isolate features in images
+	They isolate features in images
 
 4. After passing a 3x3 filter over a 28x28 image, how big will the output be?
 
-26x26
+	26x26
 
 5. After max pooling a 26x26 image with a 2x2 filter, how big will the output be?
 
-13x13
+	13x13
 
 6. Applying Convolutions on top of our Deep neural network will make training:
 
-It depends on many factors. It might make your training faster or slower, and a poorly designed Convolutional layer may even be less efficient than a plain DNN!
+	It depends on many factors. It might make your training faster or slower, and a poorly designed Convolutional layer may even be less efficient than a plain DNN!
 
 ### Weekly Exercise - Improving DNN Performance using Convolutions
 
