@@ -10,7 +10,7 @@ One way to solve that is to use lots of pictures of clothing and tell the comput
 
 Fortunately, there's a data set called Fashion MNIST which gives a 70 thousand images spread across 10 different items of clothing. 
 
-[MNIST](https://raw.githubusercontent.com/JiaRuiShao/TensorFlow/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/images/MNIST.PNG)
+![MNIST](https://raw.githubusercontent.com/JiaRuiShao/TensorFlow/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/images/MNIST.PNG)
 
 These images have been scaled down to 28 by 28 pixels. Now usually, the smaller the better because the computer has less processing to do. But of course, you need to retain enough information to be sure that the features and the object can still be distinguished. 
 
@@ -35,7 +35,7 @@ So in the Fashion-MNIST data set, 60,000 of the 70,000 images are used to train 
 
 So this code above will give you those sets. Then, each set has data, the images themselves and labels and that's what the image is actually of. 
 
-[W2.1]()
+![W2.1](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI,%20ML%20and%20DL/images/W2.1.PNG?raw=true)
 
 So for example, the training data will contain images like this one, and a label that describes the image like this. While this image is an ankle boot, the label describing it is the number nine. 
 
@@ -175,7 +175,7 @@ model.evaluate(test_images, test_labels)
 
 ```
 
-## Weekly Exercise -- Implement a Deep Neural Network to recognize handwritten digits
+### Weekly Exercise -- Implement a Deep Neural Network to recognize handwritten digits
 
 [Exercise](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%202%20-%20Handwriting%20Recognition/Exercise2-Question.ipynb)
 
