@@ -39,22 +39,26 @@ Welcome to week 2 of the course! In week 1 you learned all about how Machine Lea
 
 Welcome to week 3! In week 2 you saw a basic Neural Network for Computer Vision. It did the job nicely, but it was a little naive in its approach. This week we’ll see how to make it better, as discussed by Laurence and Andrew here.
 
-[Week 3 Note]()
+[Week 3 Note](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/3-%20Enhancing%20Vision%20with%20Convolutional%20Neural%20Networks/Outline.md)
 
-[W3 Example]()
+[W3 Example](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/3-%20Enhancing%20Vision%20with%20Convolutional%20Neural%20Networks/Example%20-%20Improving%20Computer%20Vision%20Accuracy%20using%20Convolutions.ipynb)
 
-[W3 Exercise]()
+[Convolutions_Sidebar -- Play with Convolutions](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/3-%20Enhancing%20Vision%20with%20Convolutional%20Neural%20Networks/Convolutions_Sidebar%20--%20Play%20with%20Convolutions.ipynb)
 
-[W3 Answer]()
+[W3 Exercise 1](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/3-%20Enhancing%20Vision%20with%20Convolutional%20Neural%20Networks/Exercise_1%20-%20Improving%20Computer%20Vision%20Accuracy%20using%20Convolutions.ipynb)
+
+[W3 Exercise 2](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/3-%20Enhancing%20Vision%20with%20Convolutional%20Neural%20Networks/Exercise_2_Question%20--%20Improve%20MNIST%20with%20convolutions.ipynb)
 
 #### Week 4 Using Real-world Images
 
 Last week you saw how to improve the results from your deep neural network using convolutions. It was a good start, but the data you used was very basic. What happens when your images are larger, or if the features aren’t always in the same place? Andrew and Laurence discuss this to prepare you for what you’ll learn this week: handling complex images!
 
-[Week 4 Note]()
+[Week 4 Note](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/4-%20Using%20Real-World%20Images/Outline.md)
 
-[W4 Example]()
+[W4 Example 1 - Horse-or-Human-NoValidation](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/4-%20Using%20Real-World%20Images/Example%20-%20Horse-or-Human-NoValidation.ipynb)
 
-[W4 Exercise]()
+[W4 Example 2 - Horse-or-Human-WithValidatio](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/4-%20Using%20Real-World%20Images/Example_Horse_or_Human_WithValidation.ipynb)
 
-[W4 Answer]()
+[W4 Exercise_1_Horse_or_Human_try_compress_data.ipynb](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI,%20ML%20and%20DL/4-%20Using%20Real-World%20Images/Exercise_1_Horse_or_Human_try_compress_data.ipynb)
+
+[W4 Exercise_2_Happy_or_Sad](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/4-%20Using%20Real-World%20Images/Exercise_2_Happy_or_Sad.ipynb)
