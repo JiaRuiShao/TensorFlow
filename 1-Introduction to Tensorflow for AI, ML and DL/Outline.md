@@ -15,11 +15,11 @@ Welcome to this course on going from Basics to Mastery of TensorFlow. We're exci
 
 [Week 1 Note](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/1-%20Intro%20to%20Tensorflow/Outline.md)
 
-[W1 Example](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/1-%20Intro%20to%20Tensorflow/Example_1_TensorFlow_for_DL_1.md)
+[W1 Example 1 --TensorFlow for DL](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/1-%20Intro%20to%20Tensorflow/Example_1_TensorFlow_for_DL_1.md)
 
-[W1 Exercise](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/1-%20Intro%20to%20Tensorflow/Exercise_1_House_Prices_Question.ipynb)
+[W1 Exercise_1_House_Prices_Question](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/1-%20Intro%20to%20Tensorflow/Exercise_1_House_Prices_Question.ipynb)
 
-[W1 Answer](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/1-%20Intro%20to%20Tensorflow/Exercise_1_House_Prices_Answer.ipynb)
+[W1 Exercise_1_House_Prices_Answer](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/1-%20Intro%20to%20Tensorflow/Exercise_1_House_Prices_Answer.ipynb)
 
 #### Week 2 Introduction to Computer Vision
 
@@ -27,13 +27,13 @@ Welcome to week 2 of the course! In week 1 you learned all about how Machine Lea
 
 [Week 2 Note](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/2-%20Intro%20to%20Computer%20Vision/Outline.md)
 
-[W2 Example](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/2-%20Intro%20to%20Computer%20Vision/Example%20training%20model.ipynb)
+[W2 Example -- training model](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/2-%20Intro%20to%20Computer%20Vision/Example%20training%20model.ipynb)
 
 [Callbacks Fcuntion](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/2-%20Intro%20to%20Computer%20Vision/Callbacks%20Function.ipynb)
 
-[W2 Exercise](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/2-%20Intro%20to%20Computer%20Vision/Exercise%20--%20Recognize%20Handwriting.ipynb)
+[W2 Exercise -- Recognize Handwriting](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/2-%20Intro%20to%20Computer%20Vision/Exercise%20--%20Recognize%20Handwriting.ipynb)
 
-[W2 Answer](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/2-%20Intro%20to%20Computer%20Vision/Exercise%20--%20Recognize%20Handwriting%20--%20Answer.ipynb)
+[W2 Answer -- Recognize Handwriting](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/2-%20Intro%20to%20Computer%20Vision/Exercise%20--%20Recognize%20Handwriting%20--%20Answer.ipynb)
 
 #### Week 3 Enhancing Vision with Convolutional Neural Networks
 
@@ -41,13 +41,13 @@ Welcome to week 3! In week 2 you saw a basic Neural Network for Computer Vision.
 
 [Week 3 Note](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/3-%20Enhancing%20Vision%20with%20Convolutional%20Neural%20Networks/Outline.md)
 
-[W3 Example](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/3-%20Enhancing%20Vision%20with%20Convolutional%20Neural%20Networks/Example%20-%20Improving%20Computer%20Vision%20Accuracy%20using%20Convolutions.ipynb)
+[W3 Example - Improving Computer Vision Accuracy using Convolutions](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/3-%20Enhancing%20Vision%20with%20Convolutional%20Neural%20Networks/Example%20-%20Improving%20Computer%20Vision%20Accuracy%20using%20Convolutions.ipynb)
 
 [Convolutions_Sidebar -- Play with Convolutions](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/3-%20Enhancing%20Vision%20with%20Convolutional%20Neural%20Networks/Convolutions_Sidebar%20--%20Play%20with%20Convolutions.ipynb)
 
-[W3 Exercise 1](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/3-%20Enhancing%20Vision%20with%20Convolutional%20Neural%20Networks/Exercise_1%20-%20Improving%20Computer%20Vision%20Accuracy%20using%20Convolutions.ipynb)
+[W3 Exercise 1- Improving Computer Vision Accuracy using Convolutions](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/3-%20Enhancing%20Vision%20with%20Convolutional%20Neural%20Networks/Exercise_1%20-%20Improving%20Computer%20Vision%20Accuracy%20using%20Convolutions.ipynb)
 
-[W3 Exercise 2](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/3-%20Enhancing%20Vision%20with%20Convolutional%20Neural%20Networks/Exercise_2_Question%20--%20Improve%20MNIST%20with%20convolutions.ipynb)
+[W3 Exercise 2-- Improve MNIST with convolutions](https://github.com/JiaRuiShao/TensorFlow/blob/master/1-Introduction%20to%20Tensorflow%20for%20AI%2C%20ML%20and%20DL/3-%20Enhancing%20Vision%20with%20Convolutional%20Neural%20Networks/Exercise_2_Question%20--%20Improve%20MNIST%20with%20convolutions.ipynb)
 
 #### Week 4 Using Real-world Images
 
