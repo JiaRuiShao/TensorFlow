@@ -32,13 +32,13 @@ Multivariate Time Series charts can be useful ways of understanding the impact o
 
 4. auto correlated time series \-\- it correlates with a delayed copy of itself often called a lag
 
-![1_1]()
+![1_1](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_1.PNG?raw=true)
 
 Often a time series like this is described as having memory as steps are dependent on previous ones.
 
 **Time series we'll encounter in real life = trend + seasonality + autocorrelation + noise**
 
-![1_3]()
+![1_3](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_3.PNG?raw=true)
 
 As we've learned a machine-learning model is designed to spot patterns, and when we spot patterns we can make predictions. 
 
@@ -47,7 +47,7 @@ As we've learned a machine-learning model is designed to spot patterns, and when
 
 - non-stationary time series
 
-![1_2]()
+![1_2](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_2.PNG?raw=true)
 
 To predict on this we could just train for limited period of time. For example, here where I take just the last 100 steps. You'll probably get a better performance than if you had trained on the entire time series. But that's breaking the mold for typical machine, learning where we always assume that more data is better
 
@@ -71,7 +71,7 @@ the more data you have, the better
 
 Naive Forcasting -- take the last value and assume that the next value will be the same one
 
-![1_5]()
+![1_5](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_5.PNG?raw=true)
 
 
 measure performance? 
@@ -99,7 +99,7 @@ You could see it as doing fixed partitioning a number of times, and then continu
 
 **Metrics for evaluating performance**
 
-![1_6]()
+![1_6](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_6.PNG?raw=true)
 
 The most common metric to evaluate the forecasting performance of a model is the mean squared error or mse where we square the errors and then calculate their mean.
 
@@ -120,7 +120,7 @@ The keras metrics libraries include an MAE that can be called like this.
 
 A common and very simple forecasting method is to calculate a **moving average**. 
 
-![1_7]()
+![1_7](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_7.PNG?raw=true)
 
 This nicely eliminates a lot of the noise and it gives us a curve roughly emulating the original series, but it does not anticipate trend or seasonality.
 
@@ -128,19 +128,19 @@ Depending on the current time i.e. the period after which you want to forecast f
 
 One method to avoid this is to remove the trend and seasonality from the time series with a technique called **differencing**. 
 
-![1_8]()
+![1_8](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_8.PNG?raw=true)
 
 Optimal Way to measure: Differencing + Moving Average
 
-![1_9]()
+![1_9](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_9.PNG?raw=true)
 
 To get the final forecasts for the original time series, we just need to add back the value at time T minus 365, and we'll get these forecasts.
 
-![1_10]()
+![1_10](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_10.PNG?raw=true)
 
 You may have noticed that our moving average removed a lot of noise but our final forecasts are still pretty noisy. Where does that noise come from? Well, that's coming from the past values that we added back into our forecasts. So we can improve these forecasts by also removing the past noise using a moving average on that.
 
-![1_11]()
+![1_11](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_11.PNG?raw=true)
 
 Keep this in mind before you rush into deep learning. Simple approaches sometimes can work just fine.
 
@@ -170,7 +170,7 @@ First of all, as with any other ML problem, we have to divide our data into feat
 
 Example: use the `tf.data.Dataset` class to create some data for us, we'll make a range of 10 values. When we print them we'll see a series of data from 0 to 9. To make it more interesting, we'll use the `dataset.window` to expand our data set using windowing.
 
-![1_12]()
+![1_12](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_12.PNG?raw=true)
 
 ```python
 dataset = tf.data.Dataset.range(10)
@@ -183,7 +183,7 @@ for windoe_dataset in dataset:
 
 ```
 
-![1_13]()
+![1_13](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_13.PNG?raw=true)
 
 
 Use `drop_remainder` to drop the non-five chunks:
@@ -198,7 +198,7 @@ for windoe_dataset in dataset:
 
 ```
 
-![1_14]()
+![1_14](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_14.PNG?raw=true)
 
 put these into numpy lists so that we can start using them with machine learning:
 
@@ -211,7 +211,7 @@ for window in dataset:
 
 ```
 
-![1_15]()
+![1_15](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_15.PNG?raw=true)
 
 split the data into features and labels:
 
@@ -225,7 +225,7 @@ for x,y in dataset:
 
 ```
 
-![1_16]()
+![1_16](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_16.PNG?raw=true)
 
 shuffle the data before training(so as not to accidentally introduce a sequence bias): 
 
@@ -246,7 +246,7 @@ for x,y in dataset:
 
 ```
 
-![1_17]()
+![1_17](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_17.PNG?raw=true)
 
 batching the data:
 
@@ -263,7 +263,7 @@ for x,y in dataset:
 
 ```
 
-![1_18]()
+![1_18](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_18.PNG?raw=true)
 
 
 [Exercise -- Prepraing the data before training](https://colab.research.google.com/drive/1swlYnl18UGoXZfsgAc4RcPxsN_nrRmYr#scrollTo=Wa0PNwxMGapy)
@@ -271,7 +271,7 @@ for x,y in dataset:
 
 **Feeding windowed dataset into neural network**
 
-![1_19]()
+![1_19](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_19.PNG?raw=true)
 
 So if you think back to this diagram and you consider the input window to be 20 values wide, then let's call them x0, x1, x2, etc, all the way up to x19. But let's be clear. That's not the value on the horizontal axis which is commonly called the x-axis, it's the value of the time series at that point on the horizontal axis. So the value at time t0, which is 20 steps before the current value is called x0, and t1 is called x1, etc. Similarly, for the output, which we would then consider to be the value at the current time to be the y.
 
@@ -313,7 +313,7 @@ print("Layer weights {}".format(l0.get_weights()))
 
 **Prediction**
 
-![1_20]()
+![1_20](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_20.PNG?raw=true)
 
 ```python
 forecast = []
@@ -382,7 +382,7 @@ plt.semilogx(lrs, history.history["loss"])
 plt.axis([1e-8, 1e-3, 0, 300])
 ```
 
-![1_21]()
+![1_21](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_21.PNG?raw=true)
 
 update the model using the choosen learning rate:
 
@@ -414,7 +414,7 @@ history = model.fit(dataset, epochs=500, verbose=0)
 
 **Recurrent Neural Network**
 
-![1_22]()
+![1_22](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_22.PNG?raw=true)
 
 With an RNN, you can feed it in batches of sequences, and it will output a batch of forecasts.
 
@@ -424,11 +424,11 @@ For example, if it's a univariate time series, this value will be one, for multi
 
 **How RNN layers work**
 
-![1_23]()
+![1_23](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_23.PNG?raw=true)
 
 **Shape of the inputs to the RNN**
 
-![1_24]()
+![1_24](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_24.PNG?raw=true)
 
 So for example, if we have a window size of 30 timestamps and we're batching them in sizes of four, the shape will be 4 times 30 times 1, and each timestamp, the memory cell input will be a four by one matrix, like this. 
 
@@ -436,19 +436,19 @@ For subsequent ones, it'll be the output from the memory cell. If the memory cel
 
 **Outputting a sequence**
 
-![1_25]()
+![1_25](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_25.PNG?raw=true)
 
 the last unit is just one because we're using a univariate time series
 
 If we set return_sequences to true and all recurrent layers, then they will all output sequences and the dense layer will get a sequence as its inputs. 
 
-![1_26]()
+![1_26](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_26.PNG?raw=true)
 
 Keras handles this by using the same dense layer independently at each time stamp. It might look like multiple ones here but it's the same one that's being reused at each time step. This gives us what is called a sequence to sequence RNN. It's fed a batch of sequences and it returns a batch of sequences of the same length. The dimensionality may not always match. It depends on the number of units in the memory sale. 
 
 **Lambda layers**
 
-![1_27]()
+![1_27](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_27.PNG?raw=true)
 
 Lambda Layer: allows us to perform arbitrary operations to effectively expand the functionality of TensorFlow's kares
 
@@ -462,7 +462,7 @@ optimize the neural network for the learning rate of the optimizer:
 
 So here's the code for training the RNN with two layers each with 40 cells. To tune the learning rate, we'll set up a callback, which you can see here.
 
-![1_28]()
+![1_28](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_28.PNG?raw=true)
 
 New loss function: [Huber Loss](https://en.wikipedia.org/wiki/Huber_loss)
 
@@ -476,11 +476,11 @@ The Huber function is a loss function that's less sensitive to outliers and as t
 
 perhaps a better approach would be to use LSTMs instead of RNNs to see the impact
 
-![1_30]()
+![1_30](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_30.PNG?raw=true)
 
 LSTMs are the cell state to this that keep a state throughout the life of the training so that the state is passed from cell to cell, timestamp to timestamp, and it can be better maintained. This means that the data from earlier in the window can have a greater impact on the overall projection than in the case of RNNs. 
 
-![1_29]()
+![1_29](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_29.PNG?raw=true)
 
 [Video Lecture](https://www.coursera.org/lecture/nlp-sequence-models/bidirectional-rnn-fyXnn)
 
@@ -524,7 +524,7 @@ Data Format:
 
 Index, Date, Monthly Mean Total Sunspot Number
 
-![1_31]()
+![1_31](https://github.com/JiaRuiShao/TensorFlow/blob/master/4-Sequences,%20Time%20Series%20and%20Prediction/images/1_31.PNG?raw=true)
 
 [LSTM - Sunspot](https://colab.research.google.com/drive/152jU0ruULeMwIulPG-Kc2i4Kd_-XLg3M#scrollTo=AOVzQXxCwkzP)
 
