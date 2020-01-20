@@ -491,8 +491,6 @@ LSTMs are the cell state to this that keep a state throughout the life of the tr
 
 In this exercise you’ll take a synthetic data set and write the code to pick the learning rate and then train on it to get an MAE of < 3
 
-[LSTM -- Mean Absolute Error Notebook]()
-
 [LSTM -- Mean Absolute Error Notebook (Exercise)](https://colab.research.google.com/drive/1tC0FA1CndPFKLkBSlDlD57OBUAX-uL77#scrollTo=D1J15Vh_1Jih)
 
 
@@ -531,7 +529,6 @@ Index, Date, Monthly Mean Total Sunspot Number
 **Weekly Exercise**
 
 [LSTM - Daily Min Temp](https://colab.research.google.com/drive/1_yhtB-gHh2pBEfO1M2uTWED_3m9ilZf5#scrollTo=GNkzTFfynsmV)
-
 
 [LSTM - Daily Min Temp (Practice)](https://colab.research.google.com/drive/1pRRXWiz5QQisPd7AU031gysh5D11A11s#scrollTo=sLl52leVp5wU)
 
